@@ -1,0 +1,52 @@
+<%= form_with(model: turf_info, local: true) do |form| %>
+  <% if turf_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(turf_info.errors.count, "error") %> prohibited this turf_info from being saved:</h2>
+
+      <ul>
+      <% turf_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :landmark %>
+    <%= form.text_field :landmark %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :charges %>
+    <%= form.number_field :charges %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Submit", class: "btn waves-effect waves-light material-icons right" %>
+  </div>
+<% end %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @turf_info.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @turf_info.address %>
+</p>
+
+<p>
+  <strong>Landmark:</strong>
+  <%= @turf_info.landmark %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @turf_info.phone %>
+</p>
+
+<p>
+  <strong>Charges:</strong>
+  <%= @turf_info.charges %>
+</p>
+
+<p>
+  <strong>Available:</strong>
+  <%= @turf_info.available %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @turf_info.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @turf_info.phone %>
+</p>
+
+<%= link_to 'Edit', edit_turf_info_path(@turf_info), class: "waves-effect waves-light btn" %> |
+<%= link_to 'Back', turf_infos_path, class: "waves-effect waves-light btn" %>
